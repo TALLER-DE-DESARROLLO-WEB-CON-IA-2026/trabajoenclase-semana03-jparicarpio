@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaTech Electronics – Tecnología que transforma vidas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- ════ HEADER ════ -->
+<header id="mainHeader">
+    <a href="index.html" class="logo">
+        <div class="logo-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/900/900349.png" alt="Logo NovaTech - Icono de tecnología">
+        </div>
+        <span class="logo-text">Nova<span>Tech</span></span>
+    </a>
+    <nav>
+        <a href="#hero">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#experiencia">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="lanzamientos.html" class="nav-launch">🚀 Lanzamientos 2025</a>
+        <a href="#contacto" class="nav-cta">Comprar ahora</a>
+    </nav>
+</header>
+
+<main>
+    <!-- ════ HERO ════ -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-content">
+            <div class="hero-tag"><span class="dot"></span> Líderes en tecnología desde 2003</div>
+            <h1 class="hero-title">
+                Tecnología que<br>
+                <span class="gradient-text">transforma</span><br>
+                tu <span class="accent">mundo</span>
+            </h1>
+            <p class="hero-subtitle">Descubre la más amplia selección de artículos electrónicos de alta calidad. Desde consolas hasta electrodomésticos inteligentes, todo en un solo lugar.</p>
+            <div class="hero-btns">
+                <a href="#productos" class="btn-primary">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1413/1413763.png" alt="Icono de productos"> Ver productos
+                </a>
+                <a href="lanzamientos.html" class="btn-launch-special">
+                    🎯 Ver futuros lanzamientos
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="hero-image-inner">
+                <img src="https://images.unsplash.com/photo-1593640495253-23196b27a87f?w=700&q=85&fit=crop" alt="Productos electrónicos de alta gama NovaTech - Laptop y dispositivos modernos">
+                <div class="hero-badge">
+                    <img src="https://images.unsplash.com/photo-1486401899868-0e435ed85128?w=100&q=80&fit=crop" alt="Consola de videojuegos representativa">
+                    <div class="hero-badge-text">
+                        <strong>+500 productos</strong>disponibles hoy
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ MARCAS ════ -->
+    <div class="brands-strip">
+        <p class="brands-label">Marcas de confianza que distribuimos</p>
+        <div class="brands-track-wrap">
+            <div class="brands-track" id="brandsTrack">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/1200px-Samsung_Logo.svg.png" alt="Samsung - Logo oficial">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png" alt="Apple - Logo oficial">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Lg-logo.svg/1200px-Lg-logo.svg.png" alt="LG - Logo oficial">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Sony_logo.svg/1200px-Sony_logo.svg.png" alt="Sony - Logo oficial">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Panasonic_logo_%28Blue%29.svg/1200px-Panasonic_logo_%28Blue%29.svg.png" alt="Panasonic - Logo oficial">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Bosch-logo.svg/1200px-Bosch-logo.svg.png" alt="Bosch - Logo oficial">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/1200px-Samsung_Logo.svg.png" alt="Samsung - Logo oficial">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png" alt="Apple - Logo oficial">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Lg-logo.svg/1200px-Lg-logo.svg.png" alt="LG - Logo oficial">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Sony_logo.svg/1200px-Sony_logo.svg.png" alt="Sony - Logo oficial">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Panasonic_logo_%28Blue%29.svg/1200px-Panasonic_logo_%28Blue%29.svg.png" alt="Panasonic - Logo oficial">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Bosch-logo.svg/1200px-Bosch-logo.svg.png" alt="Bosch - Logo oficial">
+            </div>
+        </div>
+    </div>
+
+    <!-- ════ PRODUCTOS ════ -->
+    <section id="productos">
+        <div class="section-header reveal">
+            <span class="section-tag">Catálogo 2025</span>
+            <h2 class="section-title">Productos <span>Destacados</span></h2>
+            <p class="section-subtitle">Seleccionados por nuestros expertos para ofrecerte lo mejor en cada categoría.</p>
+        </div>
+
+        <div class="product-filters reveal">
+            <button class="filter-btn active" onclick="filterProducts('all',this)">Todos</button>
+            <button class="filter-btn" onclick="filterProducts('gaming',this)">Gaming</button>
+            <button class="filter-btn" onclick="filterProducts('cocina',this)">Cocina</button>
+            <button class="filter-btn" onclick="filterProducts('hogar',this)">Hogar</button>
+            <button class="filter-btn" onclick="filterProducts('audio',this)">Audio</button>
+            <button class="filter-btn" onclick="filterProducts('tv',this)">TV &amp; Display</button>
+        </div>
+
+        <div class="products-grid" id="productGrid">
+            <div class="product-card reveal" data-cat="gaming">
+                <div class="card-glow"></div>
+                <span class="card-badge">Oferta</span>
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=500&q=85&fit=crop" alt="PlayStation 5 Slim - Consola de última generación">
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">Gaming</span>
+                    <h3 class="card-name">PlayStation 5 Slim</h3>
+                    <p class="card-desc">Potencia de última generación con SSD ultrarrápido y ray tracing en tiempo real.</p>
+                    <div class="card-footer">
+                        <div class="card-price">S/ 2,899 <small>Antes S/ 3,299</small></div>
+                        <button class="btn-card"><img src="https://cdn-icons-png.flaticon.com/512/1413/1413763.png" alt="Icono ver producto"> Ver</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal" data-cat="gaming" style="transition-delay:.08s">
+                <div class="card-glow"></div>
+                <span class="card-badge nuevo">Nuevo</span>
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=500&q=85&fit=crop" alt="Xbox Series X 2TB - Consola gaming">
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">Gaming</span>
+                    <h3 class="card-name">Xbox Series X 2TB</h3>
+                    <p class="card-desc">El sistema gaming más potente de Microsoft con 120 FPS y Quick Resume integrado.</p>
+                    <div class="card-footer">
+                        <div class="card-price">S/ 2,649 <small>Envío gratis</small></div>
+                        <button class="btn-card"><img src="https://cdn-icons-png.flaticon.com/512/1413/1413763.png" alt="Icono ver producto"> Ver</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal" data-cat="cocina" style="transition-delay:.16s">
+                <div class="card-glow"></div>
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&q=85&fit=crop" alt="Cocina Vitrocerámica 4 Zonas - Electrodoméstico de cocina">
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">Cocina</span>
+                    <h3 class="card-name">Cocina Vitrocerámica 4 Zonas</h3>
+                    <p class="card-desc">Superficie de cristal negro, control táctil y 9 niveles de potencia por zona de calor.</p>
+                    <div class="card-footer">
+                        <div class="card-price">S/ 1,450 <small>18 cuotas sin interés</small></div>
+                        <button class="btn-card"><img src="https://cdn-icons-png.flaticon.com/512/1413/1413763.png" alt="Icono ver producto"> Ver</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal" data-cat="hogar" style="transition-delay:.24s">
+                <div class="card-glow"></div>
+                <span class="card-badge">Top ventas</span>
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500&q=85&fit=crop" alt="Refrigerador Samsung French Door 700L - Electrodoméstico de hogar">
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">Hogar</span>
+                    <h3 class="card-name">Refrigerador Samsung French Door 700L</h3>
+                    <p class="card-desc">Dispensador de agua y hielo, Twin Cooling Plus y pantalla LCD integrada.</p>
+                    <div class="card-footer">
+                        <div class="card-price">S/ 4,199 <small>Incluye instalación</small></div>
+                        <button class="btn-card"><img src="https://cdn-icons-png.flaticon.com/512/1413/1413763.png" alt="Icono ver producto"> Ver</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal" data-cat="audio" style="transition-delay:.32s">
+                <div class="card-glow"></div>
+                <span class="card-badge nuevo">Nuevo</span>
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=85&fit=crop" alt="Auriculares Sony WH-1000XM6 - Audio de alta calidad">
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">Audio</span>
+                    <h3 class="card-name">Sony WH-1000XM6</h3>
+                    <p class="card-desc">Cancelación de ruido líder en la industria, 30 horas de batería y audio LDAC.</p>
+                    <div class="card-footer">
+                        <div class="card-price">S/ 1,299 <small>Color a elegir</small></div>
+                        <button class="btn-card"><img src="https://cdn-icons-png.flaticon.com/512/1413/1413763.png" alt="Icono ver producto"> Ver</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card reveal" data-cat="tv" style="transition-delay:.4s">
+                <div class="card-glow"></div>
+                <span class="card-badge">Oferta</span>
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f4834c?w=500&q=85&fit=crop" alt="Smart TV Samsung QLED 75 pulgadas 4K">
+                </div>
+                <div class="card-body">
+                    <span class="card-cat">TV &amp; Display</span>
+                    <h3 class="card-name">Samsung QLED 75" 4K</h3>
+                    <p class="card-desc">Panel Quantum Dot, 144Hz, HDR2000 y sistema Tizen con inteligencia artificial.</p>
+                    <div class="card-footer">
+                        <div class="card-price">S/ 6,499 <small>Antes S/ 7,899</small></div>
+                        <button class="btn-card"><img src="https://cdn-icons-png.flaticon.com/512/1413/1413763.png" alt="Icono ver producto"> Ver</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ BANNER DE LANZAMIENTOS ════ -->
+    <div class="launch-banner reveal">
+        <h3>🚀 ¿Listo para el <span>futuro</span>?</h3>
+        <p>Descubre nuestra sección exclusiva de futuros lanzamientos. Productos que llegarán este 2025 para revolucionar tu experiencia tecnológica.</p>
+        <a href="lanzamientos.html" class="btn-banner">
+            Ver todos los lanzamientos → 
+        </a>
+    </div>
+
+    <!-- ════ EXPERIENCIA ════ -->
+    <section id="experiencia">
+        <div class="exp-inner">
+            <div class="exp-left">
+                <div class="section-header reveal-left">
+                    <span class="section-tag">¿Quiénes somos?</span>
+                    <h2 class="section-title">Más de <span>22 años</span><br>de trayectoria</h2>
+                </div>
+                <p class="exp-desc reveal-left" style="transition-delay:.1s">
+                    Desde 2003, NovaTech ha sido el referente en tecnología y electrónica del mercado peruano. Comenzamos como una pequeña tienda en Lima y hoy contamos con presencia en 12 ciudades del país, siempre comprometidos con la calidad, el servicio y la innovación constante.
+                </p>
+                <div class="stats-grid">
+                    <div class="stat-card reveal" style="transition-delay:.15s">
+                        <span class="stat-num" data-target="22">0</span><span style="color:var(--amarillo-neon);font-family:'Exo 2',sans-serif;font-weight:900;font-size:2rem">+</span>
+                        <span class="stat-label">Años de experiencia</span>
+                    </div>
+                    <div class="stat-card reveal" style="transition-delay:.25s">
+                        <span class="stat-num" data-target="500">0</span><span style="color:var(--amarillo-neon);font-family:'Exo 2',sans-serif;font-weight:900;font-size:2rem">+</span>
+                        <span class="stat-label">Productos en catálogo</span>
+                    </div>
+                    <div class="stat-card reveal" style="transition-delay:.35s">
+                        <span class="stat-num" data-target="48">0</span><span style="color:var(--amarillo-neon);font-family:'Exo 2',sans-serif;font-weight:900;font-size:2rem">K+</span>
+                        <span class="stat-label">Clientes satisfechos</span>
+                    </div>
+                    <div class="stat-card reveal" style="transition-delay:.45s">
+                        <span class="stat-num" data-target="12">0</span>
+                        <span class="stat-label">Ciudades en el Perú</span>
+                    </div>
+                </div>
+            </div>
+            <div class="exp-right">
+                <div class="testimonials reveal-right">
+                    <div class="testimonial">
+                        <div class="testimonial-stars">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                        </div>
+                        <p class="testimonial-text">"Compré mi PlayStation 5 aquí y el servicio fue impecable. Llegó en tiempo récord y perfectamente empacado. Sin duda la mejor tienda de electrónica de Lima."</p>
+                        <div class="testimonial-author">
+                            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=100&q=80&fit=crop&crop=face" alt="Foto de perfil de Carlos Mendoza">
+                            <div>
+                                <div class="testimonial-name">Carlos Mendoza</div>
+                                <div class="testimonial-role">Gamer entusiasta, Lima</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial" style="transition-delay:.1s">
+                        <div class="testimonial-stars">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                        </div>
+                        <p class="testimonial-text">"Mi refrigerador Samsung llegó instalado en el mismo día. Los técnicos fueron muy profesionales y la garantía de 3 años me da total tranquilidad."</p>
+                        <div class="testimonial-author">
+                            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80&fit=crop&crop=face" alt="Foto de perfil de Valeria Torres">
+                            <div>
+                                <div class="testimonial-name">Valeria Torres</div>
+                                <div class="testimonial-role">Ama de casa, Miraflores</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial" style="transition-delay:.2s">
+                        <div class="testimonial-stars">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Estrella de calificación">
+                        </div>
+                        <p class="testimonial-text">"El equipo de NovaTech me asesoró perfectamente. Equipé toda mi sala de entretenimiento y la experiencia fue increíble de principio a fin."</p>
+                        <div class="testimonial-author">
+                            <img class="testimonial-avatar" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=100&q=80&fit=crop&crop=face" alt="Foto de perfil de Rodrigo Quispe">
+                            <div>
+                                <div class="testimonial-name">Rodrigo Quispe</div>
+                                <div class="testimonial-role">Ingeniero, San Isidro</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ════ CONTACTO ════ -->
+    <section id="contacto">
+        <div class="contacto-bg"></div>
+        <div class="contacto-inner">
+            <div class="section-header reveal">
+                <span class="section-tag">Contáctanos</span>
+                <h2 class="section-title">Síguenos y <span>comunícate</span></h2>
+            </div>
+            <p class="contacto-sub reveal">Estamos en todas las plataformas. Síguenos para ofertas exclusivas, lanzamientos y soporte en tiempo real.</p>
+
+            <div class="social-grid reveal">
+                <a href="#" class="social-card instagram">
+                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram - Red social">
+                    <span class="social-name">Instagram</span>
+                    <span class="social-handle">@novatech.pe</span>
+                    <span class="social-followers">142K seguidores</span>
+                </a>
+                <a href="#" class="social-card facebook">
+                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook - Red social">
+                    <span class="social-name">Facebook</span>
+                    <span class="social-handle">NovaTech Perú</span>
+                    <span class="social-followers">98K seguidores</span>
+                </a>
+                <a href="#" class="social-card whatsapp">
+                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="WhatsApp - Mensajería">
+                    <span class="social-name">WhatsApp</span>
+                    <span class="social-handle">+51 987 654 321</span>
+                    <span class="social-followers">Soporte 24/7</span>
+                </a>
+                <a href="#" class="social-card youtube">
+                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube - Plataforma de videos">
+                    <span class="social-name">YouTube</span>
+                    <span class="social-handle">NovaTech TV</span>
+                    <span class="social-followers">67K suscriptores</span>
+                </a>
+                <a href="#" class="social-card tiktok">
+                    <img class="social-icon" src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok - Red social">
+                    <span class="social-name">TikTok</span>
+                    <span class="social-handle">@novatech_pe</span>
+                    <span class="social-followers">215K seguidores</span>
+                </a>
+            </div>
+
+            <div class="contact-form-wrap reveal">
+                <h3>Envíanos un mensaje</h3>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Nombre completo</label>
+                        <input type="text" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label>Correo electrónico</label>
+                        <input type="email" placeholder="tu@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="tel" placeholder="+51 999 000 000">
+                    </div>
+                    <div class="form-group">
+                        <label>Asunto</label>
+                        <select>
+                            <option>Consulta de producto</option>
+                            <option>Seguimiento de pedido</option>
+                            <option>Garantía y servicio técnico</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group full">
+                        <label>Mensaje</label>
+                        <textarea placeholder="¿En qué podemos ayudarte?"></textarea>
+                    </div>
+                </div>
+                <button class="btn-submit" id="sendBtn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/552/552489.png" alt="Icono de enviar"> Enviar mensaje
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- ════ FOOTER ════ -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <a href="index.html" class="logo" style="display:inline-flex;margin-bottom:12px">
+                <div class="logo-icon"><img src="https://cdn-icons-png.flaticon.com/512/900/900349.png" alt="Logo NovaTech"></div>
+                <span class="logo-text">Nova<span>Tech</span></span>
+            </a>
+            <p>Tu destino de confianza para electrónica de calidad en el Perú. Más de 22 años cuidando tu hogar y entretenimiento.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Productos</h4>
+            <a href="#">Gaming</a>
+            <a href="#">Televisores</a>
+            <a href="#">Refrigeración</a>
+            <a href="#">Cocina</a>
+            <a href="#">Audio</a>
+        </div>
+        <div class="footer-col">
+            <h4>Empresa</h4>
+            <a href="#">Nosotros</a>
+            <a href="#">Tiendas físicas</a>
+            <a href="#">Trabaja con nosotros</a>
+            <a href="#">Blog tech</a>
+        </div>
+        <div class="footer-col">
+            <h4>Soporte</h4>
+            <a href="#">Centro de ayuda</a>
+            <a href="#">Garantías</a>
+            <a href="#">Devoluciones</a>
+            <a href="#">Servicio técnico</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2025 NovaTech Electronics S.A.C. — Todos los derechos reservados</span>
+        <span><a href="#">Política de privacidad</a> · <a href="#">Términos y condiciones</a></span>
+    </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
