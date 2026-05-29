@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Abbey Road</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Iconos de FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="main-grid">
+        <!-- BARRA SUPERIOR -->
+        <header class="header">
+            <div class="header-left">
+                <i class="fa-brands fa-spotify logo-icon"></i>
+                <div class="search-section">
+                    <button class="icon-circle"><i class="fa-solid fa-house"></i></button>
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="¿Qué quieres reproducir?">
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="install-btn">Instalar app</button>
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-users"></i>
+                <div class="user-profile">J</div>
+            </div>
+        </header>
+
+        <div class="content-wrapper">
+            <!-- SIDEBAR IZQUIERDA -->
+            <aside class="sidebar-left">
+                <div class="library-nav">
+                    <i class="fa-solid fa-book-bookmark"></i>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="playlist-stack">
+                    <img src="assets/dj-icon.png" alt="DJ" class="nav-img">
+                    <img src="assets/abbey-road.jpg" alt="Abbey Road" class="nav-img">
+                    <img src="assets/this-is.jpg" alt="This Is" class="nav-img">
+                </div>
+            </aside>
+
+            <!-- SECCIÓN CENTRAL (ÁLBUM) -->
+            <main class="album-view">
+                <header class="album-header">
+                    <img src="assets/abbey-road.jpg" alt="Abbey Road" class="main-cover">
+                    <div class="album-details">
+                        <p class="tag">Álbum</p>
+                        <h1>Abbey Road (Remastered)</h1>
+                        <div class="album-meta">
+                            <img src="assets/beatles-artist.jpg" alt="The Beatles" class="artist-thumb">
+                            <strong>The Beatles</strong> • 1969 • 17 canciones, 47 min 29 s
+                        </div>
+                    </div>
+                </header>
+
+                <div class="action-bar">
+                    <button class="play-btn-lg"><i class="fa-solid fa-play"></i></button>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-circle-check checked"></i>
+                    <i class="fa-regular fa-circle-down"></i>
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+
+                <div class="tracklist-container">
+                    <div class="list-head">
+                        <span># Título</span>
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <div class="track-row active">
+                        <span class="num">1</span>
+                        <div class="title-col">
+                            <div class="t-name">Come Together - Remastered 2009</div>
+                            <div class="t-artist">The Beatles</div>
+                        </div>
+                        <span class="t-time">4:19</span>
+                    </div>
+                    <div class="track-row">
+                        <span class="num">2</span>
+                        <div class="title-col">
+                            <div class="t-name">Something - Remastered 2009</div>
+                            <div class="t-artist">The Beatles</div>
+                        </div>
+                        <span class="t-time">3:02</span>
+                    </div>
+                </div>
+            </main>
+
+            <!-- SIDEBAR DERECHA -->
+            <aside class="sidebar-right">
+                <h3>Abbey Road (Remastered)</h3>
+                <img src="assets/abbey-road.jpg" alt="Abbey Road" class="right-panel-img">
+                <div class="now-playing-info">
+                    <h2>Come Together - Rem</h2>
+                    <p>The Beatles</p>
+                </div>
+                <div class="related-section">
+                    <h4>Videos musicales relacionados</h4>
+                    <div class="video-placeholder"></div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- REPRODUCTOR INFERIOR -->
+        <footer class="player">
+            <div class="p-now-playing">
+                <img src="assets/abbey-road.jpg" alt="Mini">
+                <div class="p-info">
+                    <div class="p-title">Come Together - Remastered 2009</div>
+                    <div class="p-artist">The Beatles</div>
+                </div>
+                <i class="fa-solid fa-circle-check checked"></i>
+            </div>
+
+            <div class="p-controls">
+                <div class="c-buttons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-circle-play main-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="p-bar-group">
+                    <span>0:01</span>
+                    <div class="p-bar-bg"><div class="p-bar-fill"></div></div>
+                    <span>4:19</span>
+                </div>
+            </div>
+
+            <div class="p-tools">
+                <i class="fa-solid fa-microphone"></i>
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-computer"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="v-bar"></div>
+                <i class="fa-solid fa-maximize"></i>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
